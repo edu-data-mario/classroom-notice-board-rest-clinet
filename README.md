@@ -78,3 +78,4 @@ $ pdm add --dev pytest
 
 ### ref
 - https://curlconverter.com/
+- [curl guide by dashboard widget](https://github.com/Shopify/dashing/issues/56#issuecomment-11743170)
