@@ -1,6 +1,6 @@
 [project]
 name = "classroom-notice-board-rest-clinet"
-version = "0.1.0"
+version = "0.2.0"
 description = "https://github.com/edu-data-mario/classroom-notice-board rest clinet"
 authors = [
     {name = "dmario24", email = "data.mario24@gmail.com"},
