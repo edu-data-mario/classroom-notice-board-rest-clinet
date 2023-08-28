@@ -2,6 +2,13 @@ import requests
 
 
 def update_poster(message: str, base_url='https://classmario.fly.dev') -> int:
+    """Update the contents of the dashboard poster.
+
+    :param message:
+    :param base_url: default -> https://classmario.fly.dev
+    :return: 204 -> success
+
+    """
     headers = {
         'Content-Type': 'application/json',
     }
