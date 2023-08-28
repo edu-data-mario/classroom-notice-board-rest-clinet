@@ -1,0 +1,15 @@
+[project]
+name = "classroom-notice-board-rest-clinet"
+version = "0.1.0"
+description = "https://github.com/edu-data-mario/classroom-notice-board rest clinet"
+authors = [
+    {name = "dmario24", email = "data.mario24@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
