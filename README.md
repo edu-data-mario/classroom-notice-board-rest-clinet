@@ -50,3 +50,11 @@ drwxr-xr-x   4 m2  staff   128  8 28 10:03 tests
 $ source .venv/bin/activate
 (classroom-notice-board-rest-clinet-3.7) $  
 ```
+
+### init test
+```bash
+$ pdm add --dev pytest
+```
+
+### ref
+- https://curlconverter.com/

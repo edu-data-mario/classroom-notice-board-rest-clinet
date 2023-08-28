@@ -1,0 +1,15 @@
+###
+# curl -X POST  -H "Content-Type: application/json" -d '{ "auth_token": "LIVING_FOR_TODAY", "text": "11 PM Meetup!" }' https://classmario.fly.dev/widgets/poster
+POST https://classmario.fly.dev/widgets/poster
+Content-Type: application/json
+
+{
+  "auth_token": "LIVING_FOR_TODAY",
+  "text": "11 PM Meetup!!!"
+}
+
+###
+
+
+
+
