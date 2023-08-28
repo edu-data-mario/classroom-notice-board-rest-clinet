@@ -1,6 +1,26 @@
 # classroom-notice-board-rest-clinet
 - https://github.com/edu-data-mario/classroom-notice-board rest clinet
 
+## USE
+```bash
+$ pip install classroom-notice-board-rest-clinet
+
+$ python
+Python 3.7.13 (default, Jul 13 2022, 10:21:28) 
+[Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom_notice_board_rest_clinet.restclient import update_poster
+>>> update_poster(message="Stay hungry, stay foolish")
+204
+>>> 
+```
+
+![image](https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/7a014960-f525-4eb0-ae64-90588e98d4d4)
+
+----
+
+## Settings for Development
+
 ### init
 ```bash
 $ pdm init
