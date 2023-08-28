@@ -1,0 +1,38 @@
+###
+# curl -X POST  -H "Content-Type: application/json" -d '{ "auth_token": "LIVING_FOR_TODAY", "text": "11 PM Meetup!" }' https://classmario.fly.dev/widgets/poster
+POST https://classmario.fly.dev/widgets/poster
+Content-Type: application/json
+
+{
+  "auth_token": "LIVING_FOR_TODAY",
+  "text": "11 PM Meetup!!!"
+}
+
+###
+# curl -X POST  -H "Content-Type: application/json" -d '{ "auth_token": "LIVING_FOR_TODAY", "items": [{"label": "item1", "value": "Test1"}, {"label": "item2", "value": "Test2"}] }' https://classmario.fly.dev/widgets/oneTeam
+POST https://classmario.fly.dev/widgets/oneTeam
+Content-Type: application/json
+
+{
+  "auth_token": "LIVING_FOR_TODAY",
+  "items": [
+    {
+      "label": "item1",
+      "value": "Test1"
+    },
+    {
+      "label": "item2",
+      "value": "Test2"
+    }
+  ]
+}
+
+###
+
+
+
+
+
+
+
+
