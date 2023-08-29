@@ -100,3 +100,4 @@ $ pytest -s
 - [curl guide by dashboard widget](https://github.com/Shopify/dashing/issues/56#issuecomment-11743170)
 - [How to package a Python project to be run in the console](https://stackoverflow.com/questions/69638969/how-to-package-a-python-project-to-be-run-in-the-console)
 - [파이썬 표준 라이브러리에서 권장하는 명령행 파싱 모듈인 argparse 에 대한 소개](https://docs.python.org/ko/3/howto/argparse.html#argparse-tutorial)
+- https://stackoverflow.com/questions/38507593/dashing-get-value-from-a-widget-over-api
