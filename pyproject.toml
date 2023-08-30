@@ -7,6 +7,7 @@ authors = [
 ]
 dependencies = [
     "requests>=2.31.0",
+    "sseclient>=0.0.27",
 ]
 requires-python = ">=3.7"
 readme = "README.md"
@@ -19,6 +20,8 @@ build-backend = "pdm.backend"
 [tool.pdm.dev-dependencies]
 dev = [
     "pytest>=7.4.0",
+    "jupyter>=1.0.0",
+    "zmq>=0.0.0",
 ]
 
 [project.urls]
