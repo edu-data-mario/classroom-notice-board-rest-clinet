@@ -1,6 +1,6 @@
 [project]
 name = "classroom-notice-board-rest-clinet"
-version = "0.2.1"
+version = "0.3.0"
 description = "https://github.com/edu-data-mario/classroom-notice-board rest clinet"
 authors = [
     {name = "dmario24", email = "data.mario24@gmail.com"},
@@ -19,6 +19,8 @@ build-backend = "pdm.backend"
 [tool.pdm.dev-dependencies]
 dev = [
     "pytest>=7.4.0",
+    "jupyter>=1.0.0",
+    "zmq>=0.0.0",
 ]
 
 [project.urls]
@@ -26,4 +28,5 @@ dev = [
 "Bug Tracker" = "https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/issues"
 
 [project.scripts]
-class-rest-client = 'classroom_notice_board_rest_clinet.main:main'
+class-write-poster = 'classroom_notice_board_rest_clinet.main:write_poster'
+class-show-data = 'classroom_notice_board_rest_clinet.main:show_dashboard_data'

@@ -2,6 +2,7 @@
 - https://github.com/edu-data-mario/classroom-notice-board rest clinet
 
 ## USE
+- import ↓
 ```bash
 $ pip install classroom-notice-board-rest-clinet
 
@@ -15,8 +16,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+- command line interface ↓
 ```bash
-$ class-rest-client -h
+$ class-write-poster -h
 usage: class-rest-client [-h] [-p | -t] msg [base_url]
 
 positional arguments:
@@ -30,6 +32,14 @@ optional arguments:
   
 $ class-rest-client -p "Stay hungry, stay foolish"
 SUCCESS UPDATE POSTER
+
+$ class-show-data -s "poster"
+{
+  "text": "Stay hungry, stay foolish",
+  "id": "poster",
+  "updatedAt": 1693361875330
+}
+
 ```
 
 ![image](https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/7a014960-f525-4eb0-ae64-90588e98d4d4)
@@ -100,3 +110,4 @@ $ pytest -s
 - [curl guide by dashboard widget](https://github.com/Shopify/dashing/issues/56#issuecomment-11743170)
 - [How to package a Python project to be run in the console](https://stackoverflow.com/questions/69638969/how-to-package-a-python-project-to-be-run-in-the-console)
 - [파이썬 표준 라이브러리에서 권장하는 명령행 파싱 모듈인 argparse 에 대한 소개](https://docs.python.org/ko/3/howto/argparse.html#argparse-tutorial)
+- https://stackoverflow.com/questions/38507593/dashing-get-value-from-a-widget-over-api
