@@ -50,23 +50,21 @@ def get_first_value_by_event(id: str, max_count=10, base_url='https://classmario
                 return data
 
 
-def update_team() -> int:
+def update_team(widgets_id: str, label: str, value: str, base_url='https://classmario.fly.dev') -> int:
+    data = get_first_value_by_event(widgets_id)
+    items = data['items']
+    add_msg = {'label': label, 'value': value}
+    items.append(add_msg)
+
     headers = {
         'Content-Type': 'application/json',
     }
 
     json_data = {
         'auth_token': 'LIVING_FOR_TODAY',
-        'items': [
-            {
-                'label': 'item1',
-                'value': 'Test1',
-            },
-            {
-                'label': 'item2',
-                'value': 'Test2',
-            },
-        ],
+        'items': items,
     }
-
-    response = requests.post('https://classmario.fly.dev/widgets/oneTeam', headers=headers, json=json_data)
+    response = requests.post(f'{base_url}/widgets/{widgets_id}',
+                             headers=headers,
+                             json=json_data)
+    return response.status_code

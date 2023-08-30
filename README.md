@@ -42,7 +42,7 @@ $ class-show-data -s "poster"
 }
 
 # You can view the current data of the dashboard widget.
-class-show-data -h
+$ class-show-data -h
 usage: class-show-data [-h] [-s | -a] [id] [max] [base_url]
 
 positional arguments:
@@ -55,6 +55,12 @@ optional arguments:
   -s, --specific  outputs a SPECIFIC id value.
   -a, --all       shows all values. However, within the max value
 
+$ class-show-data -s poster
+{
+  "text": "Stay hungry, stay foolish",
+  "id": "poster",
+  "updatedAt": 1693375461063
+}
 
 ```
 
@@ -128,3 +134,4 @@ $ pytest tests/test_main.py::test_show_dashboard_data_all -s
 - [How to package a Python project to be run in the console](https://stackoverflow.com/questions/69638969/how-to-package-a-python-project-to-be-run-in-the-console)
 - [파이썬 표준 라이브러리에서 권장하는 명령행 파싱 모듈인 argparse 에 대한 소개](https://docs.python.org/ko/3/howto/argparse.html#argparse-tutorial)
 - https://stackoverflow.com/questions/38507593/dashing-get-value-from-a-widget-over-api
+- https://pypi.org/project/Faker/ (Thank you, Jiyoung)

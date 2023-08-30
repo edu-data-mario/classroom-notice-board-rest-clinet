@@ -15,3 +15,7 @@ def test_show_dashboard_data_all():
 
     assert isinstance(widget_ids, list)
     assert 0 < len(widget_ids)
+
+
+def test_update_team():
+    data = get_first_value_by_event("oneTeam")
