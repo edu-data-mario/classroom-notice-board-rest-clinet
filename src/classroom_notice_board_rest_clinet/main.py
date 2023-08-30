@@ -44,7 +44,7 @@ def show_dashboard_data():
     elif args.all:
         print("Features are not implemented yet.")
     else:
-        print("An undefined functional call has occurred.")
+        print("An undefined functional call has occurred. ex) $ class-show-data -h")
 
 
 
