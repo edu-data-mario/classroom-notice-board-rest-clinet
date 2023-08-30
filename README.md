@@ -2,6 +2,7 @@
 - https://github.com/edu-data-mario/classroom-notice-board rest clinet
 
 ## USE
+- import ↓
 ```bash
 $ pip install classroom-notice-board-rest-clinet
 
@@ -15,8 +16,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+- command line interface ↓
 ```bash
-$ class-rest-client -h
+$ class-write-poster -h
 usage: class-rest-client [-h] [-p | -t] msg [base_url]
 
 positional arguments:
@@ -30,6 +32,14 @@ optional arguments:
   
 $ class-rest-client -p "Stay hungry, stay foolish"
 SUCCESS UPDATE POSTER
+
+$ class-show-data -s "poster"
+{
+  "text": "Stay hungry, stay foolish",
+  "id": "poster",
+  "updatedAt": 1693361875330
+}
+
 ```
 
 ![image](https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/7a014960-f525-4eb0-ae64-90588e98d4d4)

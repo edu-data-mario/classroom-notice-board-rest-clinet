@@ -1,4 +1,4 @@
-from classroom_notice_board_rest_clinet.restclient import update_poster
+from classroom_notice_board_rest_clinet.restclient import update_poster, get_first_value_by_event
 import random
 
 
@@ -16,3 +16,9 @@ def test_update_poster():
 
     response_status_code = update_poster(message=random.choice(mantra))
     assert 204 == response_status_code
+
+
+def test_get_first_value_by_event():
+    r = get_first_value_by_event('poster')
+    print(r)
+    assert isinstance(r, dict)
