@@ -1,6 +1,8 @@
 import argparse
 import json
 from classroom_notice_board_rest_clinet.restclient import update_poster, get_first_value_by_event
+from classroom_notice_board_rest_clinet.toolbox.extractor import errmsg2ids
+from classroom_notice_board_rest_clinet.toolbox.makeup_artist import print_pretty_json
 
 
 def write_poster():
@@ -26,6 +28,11 @@ def write_poster():
         print("An undefined functional call has occurred.")
 
 
+def __show_widget_data(widget_id: str, max_count: int, base_url: str):
+    data = get_first_value_by_event(id=widget_id, max_count=max_count, base_url=base_url)
+    print_pretty_json(data)
+
+
 def show_dashboard_data():
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
@@ -38,11 +45,13 @@ def show_dashboard_data():
     args = parser.parse_args()
 
     if args.specific:
-        data = get_first_value_by_event(id=args.id, max_count=args.max, base_url=args.base_url)
-        pretty_json = json.dumps(data, indent=2)
-        print(pretty_json)
+        __show_widget_data(widget_id=args.id, max_count=args.max, base_url=args.base_url)
     elif args.all:
-        print("Features are not implemented yet.")
+        data = get_first_value_by_event(id="nowhere else in the world", max_count=args.max, base_url=args.base_url)
+        widget_ids = errmsg2ids(data)
+        for widget_id in widget_ids:
+            print(widget_id.center(20, "*"))
+            __show_widget_data(widget_id=widget_id, max_count=args.max, base_url=args.base_url)
     else:
         print("An undefined functional call has occurred. ex) $ class-show-data -h")
 
