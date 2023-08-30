@@ -6,7 +6,7 @@ groups = ["default", "dev"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:9031b94e26d4c6d2f3a25815110ddda19d2dbb83cbe744be8ea6f3eb4d552800"
+content_hash = "sha256:9fb47bbca1f9859e6f56c47346581ff9e70f1991f9aeec781ed5269ce9b94d1c"
 
 [[package]]
 name = "anyio"
@@ -1311,18 +1311,6 @@ summary = "A modern CSS selector implementation for Beautiful Soup."
 files = [
     {file = "soupsieve-2.4.1-py3-none-any.whl", hash = "sha256:1c1bfee6819544a3447586c889157365a27e10d88cde3ad3da0cf0ddf646feb8"},
     {file = "soupsieve-2.4.1.tar.gz", hash = "sha256:89d12b2d5dfcd2c9e8c22326da9d9aa9cb3dfab0a83a024f05704076ee8d35ea"},
-]
-
-[[package]]
-name = "sseclient"
-version = "0.0.27"
-summary = "Python client library for reading Server Sent Event streams."
-dependencies = [
-    "requests>=2.9",
-    "six",
-]
-files = [
-    {file = "sseclient-0.0.27.tar.gz", hash = "sha256:b2fe534dcb33b1d3faad13d60c5a7c718e28f85987f2a034ecf5ec279918c11c"},
 ]
 
 [[package]]
