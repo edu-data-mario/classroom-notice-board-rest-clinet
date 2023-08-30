@@ -18,6 +18,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 - command line interface ↓
 ```bash
+# You can update the announcements in the dashboard post widget.
 $ class-write-poster -h
 usage: class-rest-client [-h] [-p | -t] msg [base_url]
 
@@ -39,6 +40,21 @@ $ class-show-data -s "poster"
   "id": "poster",
   "updatedAt": 1693361875330
 }
+
+# You can view the current data of the dashboard widget.
+class-show-data -h
+usage: class-show-data [-h] [-s | -a] [id] [max] [base_url]
+
+positional arguments:
+  id              Dashboard widget ID
+  max             Maximum number of times to search in the event stream
+  base_url        dashboard base_url default:https://classmario.fly.dev
+
+optional arguments:
+  -h, --help      show this help message and exit
+  -s, --specific  outputs a SPECIFIC id value.
+  -a, --all       shows all values. However, within the max value
+
 
 ```
 
