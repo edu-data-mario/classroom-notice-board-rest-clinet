@@ -31,3 +31,4 @@ dev = [
 [project.scripts]
 class-write-poster = 'classroom_notice_board_rest_clinet.main:write_poster'
 class-show-data = 'classroom_notice_board_rest_clinet.main:show_dashboard_data'
+class-write-team = 'classroom_notice_board_rest_clinet.main:write_team'

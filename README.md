@@ -64,11 +64,49 @@ $ class-show-data -s poster
 
 ```
 
-![image](https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/7a014960-f525-4eb0-ae64-90588e98d4d4)
+<img width="800" alt="image" src="https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/7a014960-f525-4eb0-ae64-90588e98d4d4">
+
+```bash
+$ class-write-team -h
+usage: class-write-team [-h] [-a | -r] id label value [max] [base_url]
+
+positional arguments:
+  id           Dashboard TEAM widget ID - oneTeam|twoTeam|threeTeam
+  label        Left value of row to be added to team widget
+  value        Right value of the row to be added to the Team widget
+  max          Maximum number of times to search in the event stream. default 10
+  base_url     dashboard base_url default:https://classmario.fly.dev
+
+optional arguments:
+  -h, --help   show this help message and exit
+  -a, --add    Adds a value to the Team widget.
+  -r, --reset  Clears all values in the Team widget and registers only new values.
+
+$ class-write-team -r oneTeam 홍길동 으샤으샤
+$ class-write-team -r oneTeam 김좌진 "청산리 대첩을 승리"
+$ class-write-team -a oneTeam 안중근 "히로부미를 저격"   
+$ class-write-team -a oneTeam 윤봉길 "도시락 폭탄"    
+$ class-write-team -a oneTeam 유관순 "3.1운동을 주도" 
+$ class-write-team -a oneTeam 이봉창 "일왕을 암살 시도"    
+$ class-write-team -a oneTeam 홍범도 "봉오동 전투를 승리"
+$ class-write-team -r twoTeam 이완용 학부대신            
+$ class-write-team -a twoTeam 이근택 군부대신
+$ class-write-team -a twoTeam 이지용 내부대신 
+$ class-write-team -a twoTeam 박제순 외부대신
+$ class-write-team -a twoTeam 권중현 농상공부대신
+$ class-write-team -r threeTeam 김좌진 "청산리 대첩의 영웅"
+$ class-write-team -a threeTeam 홍범도 "대한독립군 총사령관"
+$ class-write-team -a threeTeam 지청천 "만주군관학교 교장" 
+$ class-write-team -a threeTeam 이범석 "만주군관학교 생도"
+$ class-write-team -a threeTeam 이회영 "신흥무관학교 설립자"
+```
+
+<img width="800" alt="image" src="https://github.com/edu-data-mario/classroom-notice-board-rest-clinet/assets/134017660/94ed291a-8ce1-4f52-bae5-2cc4b151e8c5">
 
 ----
 
 ## Settings for Development
+- Simple users don't have to read the part about the development environment below.
 
 ### init
 ```bash
