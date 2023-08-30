@@ -33,7 +33,7 @@ def show_dashboard_data():
     group.add_argument("-a", "--all", action="store_true", help="shows all values. However, within the max value")
     parser.add_argument("id", nargs="?", type=str, help="Dashboard widget ID")
     parser.add_argument("max", nargs="?", default=10, help="Maximum number of times to search in the event stream")
-    parser.add_argument("base_url", nargs="?", default="https://classmario.fly.dev", help="dashboard base_url")
+    parser.add_argument("base_url", nargs="?", default="https://classmario.fly.dev", help="dashboard base_url default:https://classmario.fly.dev")
 
     args = parser.parse_args()
 

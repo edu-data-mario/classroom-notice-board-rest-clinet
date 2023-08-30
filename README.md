@@ -103,6 +103,7 @@ $ source .venv/bin/activate
 $ pdm add --dev pytest
 $ pytest
 $ pytest -s
+$ pytest tests/test_main.py::test_show_dashboard_data_all -s
 ```
 
 ### ref
